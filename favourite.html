@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SuperHero Hunter | Homepage</title>
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="assets/images/img7.png"
+            type="image/x-icon"
+        />
+        <!-- Google Fonts -->
+
+        <!-- Font Awesome Script -->
+        <script
+            src="https://kit.fontawesome.com/3736305248.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/fav.css" />
+
+        <!------ end of head ------>
+    </head>
+    <body>
+        <!-- ---------------------Header--------------------- -->
+        <header class="container homepage-header">
+            <div class="navbar">
+                <!-- Logo Image -->
+                <i>
+                    <a href="./index.html">
+                        <img
+                            class="logo-image"
+                            src="assets/images/img7.png"
+                            alt=""
+                        />
+                    </a>
+                </i>
+                <!-- Home Button -->
+                <a href="./index.html"
+                    ><button class="btn nav-btn">
+                        <i class="fa-solid fa-house fav-btn"
+                            >&nbsp;Home&nbsp;</i
+                        >
+                    </button>
+                </a>
+                <a href="./favourite.html"
+                    ><button class="btn nav-btn">
+                        <i class="fa-solid fa-heart fav-btn"
+                            >&nbsp;Favourites&nbsp;</i
+                        >
+                    </button></a
+                >
+            </div>
+        </header>
+
+        <!-- ---------------------fav Results Box--------------------- -->
+        <ul class="flex-row fav-results" id="fav-results"></ul>
+        <!-- ------------[{ display superHero using JavaScript }]-------------- -->
+        <!-- ---------------------Footer--------------------- -->
+        <footer class="homepage-footer"></footer>
+        <!-- External Script file -->
+        <script src="./script/favourite.js"></script>
+    </body>
+</html>

@@ -1,0 +1,226 @@
+/* -----------------------------*----------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Raleway", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+/* -----------------------------Header----------------------------- */
+.homepage-header {
+    position: relative;
+    width: 100%;
+}
+/* -----------------------------Navbar----------------------------- */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #0275dd;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+}
+
+.logo-image {
+    width: 10%;
+    min-width: 50px;
+}
+
+.nav-btn {
+    padding: 10px;
+    min-height: 30px;
+    text-align: center;
+    border: none;
+    border: 1px solid rgbA(2, 117, 221, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+/* -----------------------Card CSS------------------------------------- */
+
+body {
+    background-color: #ffe53b;
+    background-image: linear-gradient(147deg, #ffe53b 0%, #fd3838 74%);
+    min-height: 100vh;
+}
+
+.blog-slider {
+    width: 95%;
+    position: relative;
+    /* max-width: 800px; */
+    min-width: 80%;
+    min-height: 800px;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    background: #fff;
+    box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    padding: 25px;
+    border-radius: 25px;
+    height: 400px;
+    transition: all 0.3s;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-name {
+    justify-content: center;
+}
+
+.hero-img-and-more-info {
+    gap: 30px;
+}
+
+.hero-img {
+    width: auto;
+    height: auto;
+    border: 1px solid #9b9b9b;
+    margin: 20px;
+    border-radius: 25px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); */
+}
+
+.more-info {
+    gap: 15px;
+    font-size: 1.3rem;
+}
+
+.id,
+.comics,
+.series,
+.stories {
+    gap: 5px;
+}
+
+.hero-discription {
+    font-size: 1.1rem;
+}
+.hero-discription b {
+    font-size: 1.3rem;
+}
+
+.bg-img {
+    z-index: -1;
+}
+
+@media screen and (max-width: 678px) {
+    .hero-img-and-more-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-discription {
+        text-align: center;
+    }
+    #info-container {
+        width: 85%;
+    }
+    #landscapeImage {
+        width: 100%;
+    }
+    .info {
+        height: 100vh;
+    }
+    .more-info {
+        gap: 0px;
+    }
+}
+
+.txtarea {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.card {
+    padding: 1px;
+    margin: 1px;
+}
+
+p {
+    text-align: left;
+}
+.desss {
+    display: block;
+    margin-right: 150px;
+}
+
+.addToFavBtn {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #0077ff;
+    background-color: #e0efff;
+    margin: 0 auto;
+    display: block;
+    transition: all 200ms ease-in-out;
+}
+
+.addToFavBtn:hover,
+.addToFavBtn:focus {
+    background-color: #0077ff;
+    color: #e0efff;
+}
+
+.addToFavBtn {
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 2vh;
+    background-color: white;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid #bacdd8;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#addtoastx {
+    visibility: hidden;
+    min-width: 250px;
+    align-items: center;
+    margin-left: -125px;
+    background-color: #3d83c0;
+    border: 5px solid #0225ff;
+    color: black;
+    text-align: center;
+    border-radius: 22px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+/*  Alert type box displaying in the bottom of the screen */
+
+#addtoastx.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.mainContainer {
+    flex-flow: row wrap;
+}

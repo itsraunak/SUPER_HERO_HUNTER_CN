@@ -1,0 +1,91 @@
+<!-- ------------{ Main Index File }------------ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SuperHero Hunter | Homepage</title>
+        <!-- Favicon -->
+        <link
+            rel="shortcut icon"
+            href="assets/images/img7.png"
+            type="image/x-icon"
+        />
+        <!-- Google Fonts -->
+
+        <!-- Font Awesome Script -->
+        <script
+            src="https://kit.fontawesome.com/3736305248.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/index.css" />
+
+        <!------ end of head ------>
+    </head>
+    <body>
+        <!-- ---------------------Header--------------------- -->
+        <header class="container homepage-header">
+            <div class="navbar">
+                <!-- Logo Image -->
+                <i>
+                    <a href="./index.html">
+                        <img
+                            class="logo-image"
+                            src="assets/images/img7.png"
+                            alt=""
+                        />
+                    </a>
+                </i>
+                <!-- Home Button -->
+                <a href="./index.html"
+                    ><button class="btn nav-btn">
+                        <i class="fa-solid fa-house fav-btn"
+                            >&nbsp;Home&nbsp;</i
+                        >
+                    </button>
+                </a>
+                <!-- Favourite Button -->
+                <a href="./favourite.html"
+                    ><button class="btn nav-btn">
+                        <i class="fa-solid fa-heart fav-btn"
+                            >&nbsp;Favourites&nbsp;</i
+                        >
+                    </button></a
+                >
+            </div>
+        </header>
+
+        <section class="search-section">
+            <!-- ---------------------Search Form--------------------- -->
+            <form id="search-form" class="search-form" onsubmit="return false">
+                <div class="search-box">
+                    <!-- ---------------------Input--------------------- -->
+                    <input
+                        class="form-control"
+                        type="search"
+                        placeholder="Search For SuperHero..."
+                        aria-label="Search"
+                        id="search-input"
+                        class="search-input"
+                        autocomplete="off"
+                    />
+                    <!-- ---------------------Search Button--------------------- -->
+                    <a class="btn search-btn" id="search-button">
+                        Search For SuperHero
+                    </a>
+                </div>
+            </form>
+        </section>
+        <br />
+        <!-- ---------------------Search Results Box--------------------- -->
+        <ul class="flex-row search-results" id="search-results"></ul>
+
+        <!-- ---------------------Footer--------------------- -->
+        <footer class="homepage-footer"></footer>
+        <!-- External Script file -->
+        <script src="./script/index.js"></script>
+    </body>
+</html>
